@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-test.esm.js"></script>
+    <script nomodule src="/build/stencil-test.js"></script>
+    <script src="https://kit.fontawesome.com/1c792ca14b.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: 'VT323', monospace;
+        padding: 40px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .input {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <div class="item">
+        <h2>Primary Button</h2>
+        <bt-button text="Click me!" emojis></bt-button>
+      </div>
+      <div class="item">
+        <h2>Secondary Button</h2>
+        <bt-button text="Click me!" action="secondary"></bt-button>
+      </div>
+      <div class="item">
+        <h2>Error Button</h2>
+        <bt-button text="Click me!" action="error" emojis></bt-button>
+      </div>
+    </div>
+    <div class="item">
+      <h2>Input with dynamic text</h2>
+      <bt-input class="input">
+        <span>Hi! My name is</span>
+      </bt-input>
+    </div>
+    <div class="item">
+      <bt-button text="Open Modal" opens-modal> </bt-button>
+    </div>
+    <bt-modal>
+      <h1>YOU OPENED A PERSONALIZED MODAL</h1>
+    </bt-modal>
+  </body>
+</html>

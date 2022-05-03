@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.btInput {
+  width: 500px;
+  padding: 15px;
+  font-family: 'VT323', monospace;
+  border: 5px solid;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btInput--valid {
+  border-color: green;
+}
+
+.btInput--invalid {
+  border-color: red;
+}
+
+.btInput-message {
+  margin-top: 30px;
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  font-weight: bold;
+}

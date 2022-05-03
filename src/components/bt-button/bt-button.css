@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.btButton-container {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btButton {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  border: 5px solid black;
+  min-width: 200px;
+}
+
+.btButton--primary {
+  background-color: cyan;
+}
+
+.btButton--primary:hover,
+.btButton--primary:focus {
+  background-color: rgba(0, 255, 255, 0.589);
+}
+
+.btButton--secondary {
+  background-color: magenta;
+}
+
+.btButton--secondary:hover,
+.btButton--secondary:focus {
+  background-color: rgba(255, 0, 255, 0.589);
+}
+
+.btButton--error {
+  background-color: red;
+}
+
+.btButton--error:hover,
+.btButton--error:focus {
+  background-color: rgba(255, 0, 0, 0.589);
+}
+
+.btButton-emoji {
+  font-size: 45px;
+  padding: 10px;
+}
